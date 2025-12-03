@@ -5,21 +5,21 @@
 class Tero < Formula
   desc "Improve your observability data quality from the terminal"
   homepage "https://usetero.com"
-  version "1.2.3"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usetero/cli/releases/download/v1.2.3/tero_1.2.3_darwin_amd64.tar.gz"
-      sha256 "3c4326c490ecf17488a662618eb52294a8700a516d6d266bf90542c8fb39dcaa"
+      url "https://github.com/usetero/cli/releases/download/v1.3.0/tero_1.3.0_darwin_amd64.tar.gz"
+      sha256 "f2d6cf72524b7c7f71b91545303e4708d43a1d4c83ec87a06fcd797603069f6d"
 
       def install
         bin.install "tero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usetero/cli/releases/download/v1.2.3/tero_1.2.3_darwin_arm64.tar.gz"
-      sha256 "2eaea4332a44c95ec89a8712ef8e3aad9db2880c72019fe9f1da1574af7dd851"
+      url "https://github.com/usetero/cli/releases/download/v1.3.0/tero_1.3.0_darwin_arm64.tar.gz"
+      sha256 "e899c0e9fda3c0ed80409ddf47f3e5abe1b353f98d504a0776fb0928a078b406"
 
       def install
         bin.install "tero"
@@ -29,15 +29,15 @@ class Tero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usetero/cli/releases/download/v1.2.3/tero_1.2.3_linux_amd64.tar.gz"
-      sha256 "1cf72ef3b1fa0d6235ff5496c9fc70e327bffea18bc0e0a7f21a7e015858dc9a"
+      url "https://github.com/usetero/cli/releases/download/v1.3.0/tero_1.3.0_linux_amd64.tar.gz"
+      sha256 "5897b0521ddd8674ffa056767e6e8361099f4ed50ceeafd5530b775c69146e27"
       def install
         bin.install "tero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usetero/cli/releases/download/v1.2.3/tero_1.2.3_linux_arm64.tar.gz"
-      sha256 "8c02f3f7ff93f8df08c62688fa6695671a034cd44ef6d281fcd93eeeb94d8c29"
+      url "https://github.com/usetero/cli/releases/download/v1.3.0/tero_1.3.0_linux_arm64.tar.gz"
+      sha256 "578fe048d5bbbacacfa8f1ef0f2c8e25cc38a141378bd5f7a4c4de785b9a9407"
       def install
         bin.install "tero"
       end
